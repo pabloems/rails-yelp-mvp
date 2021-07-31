@@ -15,8 +15,8 @@ class RestaurantsController < ApplicationController
   def create
     @restaurant = Restaurant.new(restaurant_params)
 
-    if @restaurat.save
-      redirect_to restaurant_path(@restaurant), notice: "El restaurant fue creado"
+    if @restaurant.save
+      redirect_to @restaurant, notice: 'Restaurant was successfully created.'
     else
       render :new
     end
@@ -30,7 +30,7 @@ class RestaurantsController < ApplicationController
   end
 
   def set_restaurant
-    @restaurant = Restaurat.find(params[:id])
+    @restaurant = Restaurant.find(params[:id])
   end
 
 end

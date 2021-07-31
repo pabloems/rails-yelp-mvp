@@ -8,14 +8,13 @@ class ReviewsController < ApplicationController
   def create
     @review = Review.new(review_params)
     #HAY QUE ASIGNAR EL REVIEW A RESTAURANT
-    @review.resturant = @restaurant
+    @review.restaurant = @restaurant
       if @review.save
         redirect_to restaurant_path(@restaurant)
       else
         render :new
       end
   end
-
 
   private
 

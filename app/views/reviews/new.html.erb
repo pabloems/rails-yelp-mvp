@@ -1,0 +1,18 @@
+<h1>Agregar el comentario del restaurant <%= @restaurant.name %></h1><!----RUTA NEFTEADA-----POST /restaurants/:restaurant_id/reviews---->
+<%= render 'form', restaurant: @restaurant %>
+<div class="container p-5" >
+<%= simple_form_for [@restaurant, @review ] do |form| %>
+  <ul>
+  <% if @review.errors.any? %>
+    <% @review.errors.full_messages.each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+  <% end %>
+  </ul>
+  <%= form.input :content, label: "Deja tu comentario" %>
+  <%= form.button :submit , class: "btn btn-success px-3"%>
+  
+  <%= form.label :rating, "Entrar Rating"%>
+  <%= form.text_field :rating %>
+<% end %>
+</div>

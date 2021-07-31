@@ -1,0 +1,19 @@
+
+<div class="container">
+  <%= simple_form_for(@restaurant) do |restaurant|%>
+  <%= restaurant.error_notification %>
+  <%= restaurant.error_notification message: restaurant.errors[:base].to_sentence if restaurant.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= restaurant.input :name %>
+    <%= restaurant.input :address %>
+    <%= restaurant.input :phone_number %>
+    <%= restaurant.input :category %>
+  </div>
+
+  <div class="form-actions">
+    <%= restaurant.button :submit %>
+  </div>
+  <% end %>
+</div>
+
