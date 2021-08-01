@@ -11,3 +11,24 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+#restaurants_index {
+  background-color: #082032;
+     display: grid;
+}
+
+#cards_restaurants{
+  background-color: #334756;
+  background-position: center;
+
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  display: inline-flex ;
+  font-weight: bolder;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
