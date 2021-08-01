@@ -4,19 +4,11 @@
       <div class="card" id = "cards_restaurants" style="width: 18rem;">
         <div class="card-body" id = "solo_card"> 
           <h5 class="card-title"><%= restaurant.name %></h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+          <h6 class="card-subtitle mb-2 text-muted">Phone : <%= restaurant.phone_number %></h6>
+          <p class="card-text">El mejor restaurant en la categoría <%= restaurant.category.capitalize %> food.</p>
+          <a class="card-link"><%= link_to  "Más información", restaurant_path(restaurant) %></a>
         </div>
       </div>
     <% end %>
   </div>
-</div>
-
-
-<div class="container">
-  <% @restaurants.each do |restaurant| %>
-    <h2> <%= link_to restaurant.name , restaurant_path(restaurant) %> </h2>
-  <% end %>
 </div>

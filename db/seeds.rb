@@ -11,7 +11,7 @@ Restaurant.destroy_all
 
 puts "Agregando 5 restaurants"
 
-5.times do
+6.times do
   restaurant = Restaurant.new(
     name: Faker::Restaurant.name,
     address: Faker::Address.street_name,

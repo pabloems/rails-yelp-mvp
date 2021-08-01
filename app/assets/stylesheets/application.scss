@@ -12,23 +12,30 @@
 @import "components/index";
 @import "pages/index";
 
+.container {
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-gap: 16px;
+}
+
 
 #restaurants_index {
   background-color: #082032;
-     display: grid;
+  height: 100vh;
 }
 
 #cards_restaurants{
-  background-color: #334756;
+  background-color: #181c1f;
   background-position: center;
-
   border-radius: 1px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   justify-content: space-around;
-  display: inline-flex ;
   font-weight: bolder;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  color: whitesmoke;
+  margin-top: 25%;
 }
 
