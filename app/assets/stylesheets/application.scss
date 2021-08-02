@@ -12,30 +12,43 @@
 @import "components/index";
 @import "pages/index";
 
-.container {
 
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  display: grid;
-  grid-gap: 16px;
+
+/*BARRA NAVEGACIÓN*/
+#navbarSupportedContent {
+  font-weight: bolder;
 }
 
 
-#restaurants_index {
-  background-color: #082032;
-  height: 100vh;
-}
+/*--------INDEX---------*/
 
 #cards_restaurants{
-  background-color: #181c1f;
   background-position: center;
+  background-color: #181c1f;
   border-radius: 1px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  justify-content: flex-end;
   align-items: center;
-  justify-content: space-around;
   font-weight: bolder;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
   color: whitesmoke;
-  margin-top: 25%;
+  margin-top: 5%;
+  display: inline-flex;
+  justify-content: space-between;
+
+}
+
+
+#background_page{
+ height: 100vh;
+  background-color: #222831;
+
+}
+
+/*SHOW (PÁGINA DEL PRODUCTO)*/
+
+#show_product {
+  color: white;
+  margin-top: 10%;
+  float: left;
+  margin-left: 25px;
 }
 

@@ -1,8 +1,0 @@
-
-<div class="container px-5">
-  <%= simple_form_for(@restaurant) do |restaurant|%>
-  <%= restaurant.error_notification %>
-  <%= restaurant.error_notification message: restaurant.errors[:base].to_sentence if restaurant.object.errors[:base].present? %>
-
-  <% end %>
-</div>
